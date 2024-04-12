@@ -13,6 +13,10 @@
 		CF6604E32BC7A24300924D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6604E12BC7A24300924D79 /* Main.storyboard */; };
 		CF6604E52BC7A24300924D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF6604E42BC7A24300924D79 /* Assets.xcassets */; };
 		CF6604E82BC7A24300924D79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6604E62BC7A24300924D79 /* LaunchScreen.storyboard */; };
+		CF6604F02BC7C28500924D79 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6604EF2BC7C28500924D79 /* ResultViewController.swift */; };
+		CF6604FA2BC7CCBC00924D79 /* TA課題用1.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6604F72BC7CCBC00924D79 /* TA課題用1.png */; };
+		CF6604FB2BC7CCBC00924D79 /* TA課題用2.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6604F82BC7CCBC00924D79 /* TA課題用2.png */; };
+		CF6604FC2BC7CCBC00924D79 /* TA課題用3.png in Resources */ = {isa = PBXBuildFile; fileRef = CF6604F92BC7CCBC00924D79 /* TA課題用3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		CF6604E42BC7A24300924D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF6604E72BC7A24300924D79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF6604E92BC7A24300924D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF6604EF2BC7C28500924D79 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CF6604F72BC7CCBC00924D79 /* TA課題用1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TA課題用1.png"; sourceTree = "<group>"; };
+		CF6604F82BC7CCBC00924D79 /* TA課題用2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TA課題用2.png"; sourceTree = "<group>"; };
+		CF6604F92BC7CCBC00924D79 /* TA課題用3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TA課題用3.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,14 @@
 				CF6604DB2BC7A24300924D79 /* AppDelegate.swift */,
 				CF6604DD2BC7A24300924D79 /* SceneDelegate.swift */,
 				CF6604DF2BC7A24300924D79 /* ViewController.swift */,
+				CF6604EF2BC7C28500924D79 /* ResultViewController.swift */,
 				CF6604E12BC7A24300924D79 /* Main.storyboard */,
 				CF6604E42BC7A24300924D79 /* Assets.xcassets */,
 				CF6604E62BC7A24300924D79 /* LaunchScreen.storyboard */,
 				CF6604E92BC7A24300924D79 /* Info.plist */,
+				CF6604F72BC7CCBC00924D79 /* TA課題用1.png */,
+				CF6604F82BC7CCBC00924D79 /* TA課題用2.png */,
+				CF6604F92BC7CCBC00924D79 /* TA課題用3.png */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -126,8 +138,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6604E82BC7A24300924D79 /* LaunchScreen.storyboard in Resources */,
+				CF6604FA2BC7CCBC00924D79 /* TA課題用1.png in Resources */,
 				CF6604E52BC7A24300924D79 /* Assets.xcassets in Resources */,
+				CF6604FB2BC7CCBC00924D79 /* TA課題用2.png in Resources */,
 				CF6604E32BC7A24300924D79 /* Main.storyboard in Resources */,
+				CF6604FC2BC7CCBC00924D79 /* TA課題用3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				CF6604E02BC7A24300924D79 /* ViewController.swift in Sources */,
 				CF6604DC2BC7A24300924D79 /* AppDelegate.swift in Sources */,
 				CF6604DE2BC7A24300924D79 /* SceneDelegate.swift in Sources */,
+				CF6604F02BC7C28500924D79 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
