@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var preButton: UIButton!
     
     @IBOutlet weak var imageView: UIImageView!{
         didSet{
@@ -17,6 +19,7 @@ class ViewController: UIViewController {
     }
     var imageIndex = 0
     var timer: Timer!
+    var mode: Bool = false
     
     let images = [
         UIImage(named: "TA課題用1.png"),
@@ -40,10 +43,16 @@ class ViewController: UIViewController {
     }
     //画像タッチで呼び出されるもの
     @objc func imageTapped() {
+        if mode {
+            self.timer.invalidate()
+        }
         performSegue(withIdentifier: "toNext", sender: nil)
     }
     //戻った時
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        if mode {
+            self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateSlide(_:)), userInfo: nil, repeats: true)
+        }
     }
     //画像渡し
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -67,6 +76,9 @@ class ViewController: UIViewController {
     }
     //スライドショー
     @IBAction func startSlideshow(_ sender: Any) {
+        nextButton.isEnabled = !nextButton.isEnabled
+        preButton.isEnabled = !preButton.isEnabled
+        mode = !mode
         if self.timer == nil {
             startButton.setTitle("停止", for: .normal)
             self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateSlide(_:)), userInfo: nil, repeats: true)

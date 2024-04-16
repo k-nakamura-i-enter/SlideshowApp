@@ -65,6 +65,8 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="wfa-hI-KPp" id="Mkp-N2-lYi"/>
+                        <outlet property="nextButton" destination="7fU-hI-x4p" id="X8A-y9-MFk"/>
+                        <outlet property="preButton" destination="hH5-Vb-oZk" id="zau-bM-wLf"/>
                         <outlet property="startButton" destination="Y53-DD-yTX" id="Or1-DL-UkD"/>
                         <segue destination="O24-5J-3ZT" kind="show" identifier="toNext" id="wnQ-cc-aki"/>
                     </connections>
